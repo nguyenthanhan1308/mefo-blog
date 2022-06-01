@@ -8,8 +8,8 @@ function Header() {
                     <img className="w-44 object-contain cursor-pointer" src="https://links.papareact.com/yvf" alt="" />
                 </Link>
                 <div className="hidden md:inline-flex items-center space-x-5 child:cursor-pointer">
-                    <h3 className="">About</h3>
-                    <h3 className="">Contact</h3>
+                    <h3>About</h3>
+                    <h3>Contact</h3>
                     <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">Follow</h3>
                 </div>
             </div>
