@@ -46,7 +46,10 @@ export default function Home({ posts }: Props) {
                                     <p className="text-xs">
                                         {post.description} by <span className="text-green-">{post.author.name}</span>
                                     </p>
-                                    {post.categories.map(category=>(<p className="text-sm my-2 p-2 text-white rounded-full bg-green-600 max-w-fit">{category.title}</p>))}
+                                    <div className="flex">
+                                        {post.categories.map(category=>(<p className="text-sm my-2 mr-2 p-2 text-white rounded-full bg-green-600 max-w-fit">{category.title}</p>))}
+
+                                    </div>
                                 </div>
                                 <img className="h-12 w-12 rounded-full" src={urlFor(post.author.image).url()!} alt="" />
                             </div>
