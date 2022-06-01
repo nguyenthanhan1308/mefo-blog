@@ -17,7 +17,6 @@ interface Props {
 }
 
 function Post({ post }: Props) {
-    console.log("🚀 ~ file: [slug].tsx ~ line 20 ~ Post ~ post", post)
     const [submmited, setSubmmited] = useState(false);
 
     const {
@@ -40,14 +39,14 @@ function Post({ post }: Props) {
 
     return (
         <main>
-            <img className="w-full h-40 object-cover" src={urlFor(post.mainImage).url()!} alt="" />
+            <img className="w-full h-80 object-cover" src={urlFor(post.mainImage).url()!} alt="" />
 
             <article className="max-w-3xl mx-auto p-5">
                 <h1 className="text-3xl mt-10 mb-3">{post.title}</h1>
                 <h2 className="text-xl font-light text-gray-500 mb-2">{post.description}</h2>
-                <div className="flex">
-                    <img className="h-10 w-10 rounded-full" src={urlFor(post.author.image).url()!} alt="" />
-                    <p className="font-extralight text-sm">
+                <div className="flex items-center py-5">
+                    <img className="h-14 w-14 rounded-full" src={urlFor(post.author.image).url()!} alt="" />
+                    <p className="font-extralight text-sm px-3">
                         Blog post by <span className="text-green-600">{post.author.name}</span> - Published at{" "}
                         {new Date(post._createdAt).toLocaleString()}
                     </p>
@@ -127,10 +126,12 @@ function Post({ post }: Props) {
             )}
             <div className="max-w-2xl flex flex-col my-10 p-10 shadow-green-500 mx-auto shadow space-y-2 ">
                 <h3 className="text-4xl">Comments</h3>
-                <hr className="pb-2"/>
-                {post.comments.map(comment=>(
+                <hr className="pb-2" />
+                {post.comments.map(comment => (
                     <div key={comment._id}>
-                        <p><span className="text-green-500">{comment.name}</span>:{comment.comment}</p>
+                        <p>
+                            <span className="text-green-500">{comment.name}</span>:{" "}{comment.comment}
+                        </p>
                     </div>
                 ))}
             </div>

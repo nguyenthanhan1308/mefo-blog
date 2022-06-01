@@ -5,14 +5,14 @@ import { Post } from "./typing";
 interface Props {
     posts: [Post];
 }
-export default function Home({ posts }: Props) {   
+export default function Home({ posts }: Props) {
     return (
         <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
                 <div className="px-10 space-y-5">
                     <h1 className="text-6xl max-w-xl font-serif">
-                        <span className="underline decoration-white decoration-4">MEFO BLOG</span> <br/> is a place where I
-                        write things I like.
+                        <span className="underline decoration-white decoration-4">MEFO BLOG</span> <br /> is a place
+                        where I write things I like.
                     </h1>
                     <h2>I'm a Vietnamese developer who love to play games and explore new things.</h2>
                 </div>
@@ -23,7 +23,11 @@ export default function Home({ posts }: Props) {
                         alt=""
                     />
                     <a target="_blank" href="https://www.facebook.com/ByoutiEmon">
-                        <img className="absolute top-0 right-0" src="https://i.ibb.co/87YC1BS/credit-removebg-preview.png" alt="credit-removebg-preview"/>
+                        <img
+                            className="absolute top-0 right-0"
+                            src="https://i.ibb.co/87YC1BS/credit-removebg-preview.png"
+                            alt="credit-removebg-preview"
+                        />
                     </a>
                 </div>
             </div>
@@ -55,15 +59,15 @@ export default function Home({ posts }: Props) {
 
 export const getServerSideProps = async () => {
     const query = `*[_type=="post"]{
-      _id,
-      title,
-      author->{
-        name,
-        image
-      },
-      description,
-      mainImage,
-      slug
+        _id,
+        title,
+        author->{
+            name,
+            image
+        },
+        description,
+        mainImage,
+        slug
     }`;
 
     const posts = await sanityClient.fetch(query);
