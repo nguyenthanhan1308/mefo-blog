@@ -8,21 +8,20 @@ import { Post } from "./typing";
 interface Props {
     posts: [Post];
 }
-
 export default function Home({ posts }: Props) {   
     return (
         <div className="max-w-7xl mx-auto">
-
-            <div className="flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:py-0">
+            <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
                 <div className="px-10 space-y-5">
                     <h1 className="text-6xl max-w-xl font-serif">
-                        <span className="underline decoration-black decoration-4">Mefo Blog</span> is a place where I write things I learned and experienced.
+                        <span className="underline decoration-white decoration-4">Mefo Blog</span> is a place where I
+                        write things I learned and experienced.
                     </h1>
-                    <h2>I'm a developer who love to play games and explore new things'</h2>
+                    <h2>I'm a Vietnamese developer who love to play games and explore new things.</h2>
                 </div>
                 <img
-                    className="hidden md:inline-flex h-32 lg:h-full"
-                    src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
+                    className="hidden md:inline-flex h-32 lg:h-full filter: hue-rotate(180deg)"
+                    src="https://i.ibb.co/JBzzpCM/Please-removebg.png"
                     alt=""
                 />
             </div>
@@ -30,7 +29,11 @@ export default function Home({ posts }: Props) {
                 {posts.map(post => (
                     <Link key={post._id} href={`/post/${post.slug.current}`}>
                         <div className="group cursor-pointer rounded-lg border overflow-hidden">
-                            <img className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out" src={urlFor(post.mainImage).url()!} alt="" />
+                            <img
+                                className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
+                                src={urlFor(post.mainImage).url()!}
+                                alt=""
+                            />
                             <div className="flex justify-between p-5 bg-white ">
                                 <div>
                                     <p className="text-lg font-bold">{post.title}</p>

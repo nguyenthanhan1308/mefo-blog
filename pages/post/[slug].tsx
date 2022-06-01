@@ -72,15 +72,15 @@ function Post({ post }: Props) {
                 </div>
             </article>
 
-            <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
+            <hr className="max-w-lg my-5 mx-auto border border-green-500" />
             {submmited ? (
-                <div className="flex flex-col p-10 my-10 bg-yellow-500 text-white max-w-2xl mx-auto">
+                <div className="flex flex-col p-10 my-10 bg-green-500 text-white max-w-2xl mx-auto">
                     <h3 className="text-3xl font-bold">Thank you for submitting your comment!</h3>
                     <p>Once it has been approved, it will appear below</p>
                 </div>
             ) : (
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col p-5 max-w-2xl mx-auto mb-10">
-                    <h3 className="text-sm text-yellow-500">Enjoyed this article?</h3>
+                    <h3 className="text-sm text-green-500">Enjoyed this article?</h3>
                     <h4 className="text-3xl font-bold">Leave a comment below!</h4>
                     <hr className="py-3 mt-2" />
 
@@ -90,7 +90,7 @@ function Post({ post }: Props) {
                         <span className="text-gray-700">Name</span>
                         <input
                             {...register("name", { required: true })}
-                            className="shadow border rounded py-2 px-3 form-input w-full ring-yellow-500 focus:ring outline-none"
+                            className="shadow border rounded py-2 px-3 form-input w-full ring-green-500 focus:ring outline-none"
                             placeholder="Mefo Beso"
                             type="text"
                         />
@@ -99,7 +99,7 @@ function Post({ post }: Props) {
                         <span className="text-gray-700">Email</span>
                         <input
                             {...register("email", { required: true })}
-                            className="shadow border rounded py-2 px-3 form-input w-full ring-yellow-500 focus:ring outline-none"
+                            className="shadow border rounded py-2 px-3 form-input w-full ring-green-500 focus:ring outline-none"
                             placeholder="Your email"
                             type="email"
                         />
@@ -108,7 +108,7 @@ function Post({ post }: Props) {
                         <span className="text-gray-700">Comment</span>
                         <textarea
                             {...register("comment", { required: true })}
-                            className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-yellow-500 outline-none focus:ring"
+                            className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-green-500 outline-none focus:ring"
                             placeholder=""
                             rows={8}
                         />
@@ -121,16 +121,16 @@ function Post({ post }: Props) {
                     </div>
                     <input
                         type="submit"
-                        className="shadow bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-none text-white px-4 rounded font-bold py-2 cursor-pointer"
+                        className="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white px-4 rounded font-bold py-2 cursor-pointer"
                     />
                 </form>
             )}
-            <div className="max-w-2xl flex flex-col my-10 p-10 shadow-yellow-500 mx-auto shadow space-y-2 ">
+            <div className="max-w-2xl flex flex-col my-10 p-10 shadow-green-500 mx-auto shadow space-y-2 ">
                 <h3 className="text-4xl">Comments</h3>
                 <hr className="pb-2"/>
                 {post.comments.map(comment=>(
                     <div key={comment._id}>
-                        <p><span className="text-yellow-500">{comment.name}</span>:{comment.comment}</p>
+                        <p><span className="text-green-500">{comment.name}</span>:{comment.comment}</p>
                     </div>
                 ))}
             </div>
