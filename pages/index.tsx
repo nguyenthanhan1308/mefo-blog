@@ -16,12 +16,26 @@ export default function Home({ posts }: Props) {
                     </h1>
                     <h2 className="">I'm a Vietnamese developer who love to play games and explore new things.</h2>
                 </div>
-                <div className="relative">
+                <div className="relative group">
+                    <p className="absolute text-4xl hidden group-hover:inline group-hover:animate-bounce top-10 lg:text-6xl lg:top-40 lg:left-10 transition ease-in-out">&darr;</p>
                     <img
-                        className="hidden md:inline-flex h-32 lg:h-full filter: hue-rotate(180deg)"
+                        className="hidden md:inline-flex h-32 lg:h-full filter: hue-rotate(180deg) transtion ease-in-out"
                         src="https://i.ibb.co/JBzzpCM/Please-removebg.png"
                         alt=""
+                        useMap="#image-map"
                     />
+                    <map name="image-map">
+                        <Link href="/donations">
+                            <area
+                                target=""
+                                alt=""
+                                title=""
+                                href=""
+                                coords="24,360,58,430,198,430,163,353,103,273,59,244,32,239,11,253,6,292"
+                                shape="poly"
+                            />
+                        </Link>
+                    </map>
                     <a target="_blank" href="https://www.facebook.com/ByoutiEmon">
                         <img
                             className="absolute lg:top-0 right-0 md:bottom--10 lg:scale-100 md:scale-75"
@@ -47,8 +61,11 @@ export default function Home({ posts }: Props) {
                                         {post.description} by <span className="text-green-">{post.author.name}</span>
                                     </p>
                                     <div className="flex">
-                                        {post.categories.map(category=>(<p className="text-sm my-2 mr-2 p-2 text-white rounded-full bg-green-600 max-w-fit">{category.title}</p>))}
-
+                                        {post.categories.map(category => (
+                                            <p className="text-sm my-2 mr-2 p-2 text-white rounded-full bg-green-600 max-w-fit">
+                                                {category.title}
+                                            </p>
+                                        ))}
                                     </div>
                                 </div>
                                 <img className="h-12 w-12 rounded-full" src={urlFor(post.author.image).url()!} alt="" />
