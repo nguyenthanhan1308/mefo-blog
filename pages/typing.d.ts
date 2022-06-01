@@ -6,6 +6,7 @@ export interface Post {
         name: string;
         image: string;
     };
+    categories:Category[];
     comments: Comment[];
     description: string;
     mainImage: {
@@ -33,4 +34,7 @@ export interface Comment {
     _rev: string;
     _type: string;
     _updatedAt: string;
+}
+export interface Category {
+    title: string;
 }
