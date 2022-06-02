@@ -7,15 +7,11 @@ interface Props {
     posts: [Post];
 }
 export default function Home({ posts }: Props) {
-    const [hideKemon, setHideKemon] = useState(false)
 
-    const stopRunning = () => {
-        setHideKemon(true);
-    }
     return (
         <div className="max-w-7xl mx-auto relative">
             <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
-                <div className={`running absolute cursor-pointer ${hideKemon&&`hidden`}`} onClick={stopRunning}>
+                <div className={`running absolute cursor-pointer hidden xl:inline-block`}>
                     <img
                         className="rotate "
                         src="https://i.ibb.co/zHykvNb/running-removebg-preview.png"
@@ -34,7 +30,7 @@ export default function Home({ posts }: Props) {
                         &darr;
                     </p>
                     <img
-                        className="hidden md:inline-flex h-32 lg:h-full filter: hue-rotate(180deg) transtion ease-in-out"
+                        className="hidden md:inline-flex h-32 lg:h-full "
                         src="https://i.ibb.co/JBzzpCM/Please-removebg.png"
                         alt=""
                         useMap="#image-map"
