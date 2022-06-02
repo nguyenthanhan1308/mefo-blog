@@ -8,13 +8,13 @@ interface Props {
 export default function Home({ posts }: Props) {
     return (
         <div className="max-w-7xl mx-auto relative">
-                <div className="running">
-                    <img
-                    className="rotate absolute"
+            <div className="running absolute">
+                <img
+                    className="rotate "
                     src="https://i.ibb.co/zHykvNb/running-removebg-preview.png"
                     alt="running-removebg-preview"
-                                />
-                </div>
+                />
+            </div>
             <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
                 <div className="px-10 space-y-5">
                     <h1 className="max-w-xl font-serif text-2xl md:text-4xl lg:text-6xl ">
