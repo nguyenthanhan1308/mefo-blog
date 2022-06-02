@@ -1,4 +1,3 @@
-import Image from'next/image'; 
 function index() {
     return (
         <div className="md:max-w-7xl max-w-xl mx-auto relative my-10">

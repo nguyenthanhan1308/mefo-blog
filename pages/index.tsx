@@ -2,6 +2,7 @@ import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "./typing";
 import { useState } from "react";
+import Container from './../components/Container';
 interface Props {
     posts: [Post];
 }
@@ -11,7 +12,7 @@ export default function Home({ posts }: Props) {
         setHideKemon(true);
     }
     return (
-        <div className="max-w-7xl mx-auto relative">
+        <Container>
             <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
                 <div className={`running absolute cursor-pointer hidden xl:inline-block group`}>
                     <img
@@ -88,7 +89,7 @@ export default function Home({ posts }: Props) {
                     </Link>
                 ))}
             </div>
-        </div>
+        </Container>
     );
 }
 
