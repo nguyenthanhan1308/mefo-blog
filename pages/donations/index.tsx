@@ -26,7 +26,7 @@ function index() {
                     <span className="text-pink-600">MOMO</span>: 0978699454
                 </p>
                 <p className="text-xs sm:text-md md:text-xl animate-bounce transition ease-in-out">
-                    <span className="text-blue-600">BANK</span>: 6211000860963
+                    <span className="text-blue-600">BIDV</span>: 6211000860963
                 </p>
             </div>
         </div>
