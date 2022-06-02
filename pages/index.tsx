@@ -1,13 +1,20 @@
 import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "./typing";
-
+import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
 interface Props {
     posts: [Post];
 }
 export default function Home({ posts }: Props) {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto relative">
+                <div className="running">
+                    <img
+                    className="rotate absolute"
+                    src="https://i.ibb.co/zHykvNb/running-removebg-preview.png"
+                    alt="running-removebg-preview"
+                                />
+                </div>
             <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
                 <div className="px-10 space-y-5">
                     <h1 className="max-w-xl font-serif text-2xl md:text-4xl lg:text-6xl ">
@@ -17,7 +24,9 @@ export default function Home({ posts }: Props) {
                     <h2 className="">I'm a Vietnamese developer who love to play games and explore new things.</h2>
                 </div>
                 <div className="relative group">
-                    <p className="absolute text-4xl hidden group-hover:inline group-hover:animate-bounce top-10 lg:text-6xl lg:top-40 lg:left-10 transition ease-in-out">&darr;</p>
+                    <p className="absolute text-4xl hidden group-hover:inline group-hover:animate-bounce top-10 lg:text-6xl lg:top-40 lg:left-10 transition ease-in-out">
+                        &darr;
+                    </p>
                     <img
                         className="hidden md:inline-flex h-32 lg:h-full filter: hue-rotate(180deg) transtion ease-in-out"
                         src="https://i.ibb.co/JBzzpCM/Please-removebg.png"
