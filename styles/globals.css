@@ -5,11 +5,11 @@
     font-family: 'Valorant';
     src: url('../asset/Valorant/Valorant.ttf');
 }
-.rotate{
+.rotating{
     animation: rotate 8s infinite ease-in-out;
 }
 .running{
-    animation: run 4s infinite ease;
+    animation: run 4s infinite ease-in-out;
 }
 @keyframes rotate {
     0% {

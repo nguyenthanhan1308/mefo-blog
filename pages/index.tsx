@@ -1,21 +1,24 @@
 import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "./typing";
-import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
 import { useState } from "react";
 interface Props {
     posts: [Post];
 }
 export default function Home({ posts }: Props) {
-
+    const [hideKemon,setHideKemon]=useState(false);
+    const stopRunning=()=>{
+        setHideKemon(true);
+    }
     return (
         <div className="max-w-7xl mx-auto relative">
             <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
-                <div className={`running absolute cursor-pointer hidden xl:inline-block`}>
+                <div className={`running absolute cursor-pointer hidden xl:inline-block group`}>
                     <img
-                        className="rotate "
+                        className={`rotating ${hideKemon&&`hidden`}`}
                         src="https://i.ibb.co/zHykvNb/running-removebg-preview.png"
                         alt="running-removebg-preview"
+                        onClick={stopRunning}
                     />
                 </div>
                 <div className="px-10 space-y-5">
