@@ -2,20 +2,26 @@ import Link from "next/link";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "./typing";
 import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
+import { useState } from "react";
 interface Props {
     posts: [Post];
 }
 export default function Home({ posts }: Props) {
+    const [hideKemon, setHideKemon] = useState(false)
+
+    const stopRunning = () => {
+        setHideKemon(true);
+    }
     return (
         <div className="max-w-7xl mx-auto relative">
-            <div className="running absolute">
-                <img
-                    className="rotate "
-                    src="https://i.ibb.co/zHykvNb/running-removebg-preview.png"
-                    alt="running-removebg-preview"
-                />
-            </div>
             <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
+                <div className={`running absolute cursor-pointer ${hideKemon&&`hidden`}`} onClick={stopRunning}>
+                    <img
+                        className="rotate "
+                        src="https://i.ibb.co/zHykvNb/running-removebg-preview.png"
+                        alt="running-removebg-preview"
+                    />
+                </div>
                 <div className="px-10 space-y-5">
                     <h1 className="max-w-xl font-serif text-2xl md:text-4xl lg:text-6xl ">
                         <span className="underline decoration-white decoration-4 ">MEFO BLOG</span> <br /> is a place
