@@ -17,9 +17,8 @@ function index() {
                     shape="rect"
                 />
             </map>
-            <div
-                style={{ fontFamily: "Valorant" }}
-                className="absolute bottom-[0] inset-x-1/3 lg:bottom-[2%] child:mx-auto"
+            <div    
+                className="text-val absolute bottom-[0] inset-x-1/3 lg:bottom-[2%] child:mx-auto"
             >
                 <p className="hidden md:inline text-xl lg:text-2xl ">
                     PLEASE DONATE FOR <br /> NEW VALORANT SKINS

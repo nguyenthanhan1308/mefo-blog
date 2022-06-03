@@ -1,38 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-    font-family: 'Valorant';
-    src: url('../asset/Valorant/Valorant.ttf');
-}
-.rotating{
-    animation: rotate 8s infinite ease-in-out;
-}
-.running{
-    animation: run 4s infinite ease-in-out;
-}
-@keyframes rotate {
-    0% {
-        transform:rotateY(0deg) ;
+/* font */
+    @font-face {
+        font-family: 'Valorant';
+        src: url('../asset/Valorant/Valorant.ttf');
+
     }
-    50%{
-        transform: rotateY(180deg);
+    @font-face{
+            font-family: 'Sega';
+            src: url('../asset/Sega/SEGA.ttf');
     }
-    51%{
-        transform: rotateY(0deg);
+    .text-val{
+        font-family:"Valorant";
     }
-    100%{
-        transform:rotateY(180deg) ;
+    .text-sega{
+        font-family: "Sega";
     }
-}
-@keyframes run {
-    0% {
-        transform:translateX(0%) ;
+/* animation kemon */
+    .rotating{
+        animation: rotate 8s infinite ease-in-out;
     }
-    50% {
-        transform: translateX(100%);
+    .running{
+        animation: run 4s infinite ease-in-out;
     }
-    100%{
-        transform: translateX(0%);
+    @keyframes rotate {
+        0% {
+            transform:rotateY(0deg) ;
+        }
+        50%{
+            transform: rotateY(180deg);
+        }
+        51%{
+            transform: rotateY(0deg);
+        }
+        100%{
+            transform:rotateY(180deg) ;
+        }
     }
-}
+    @keyframes run {
+        0% {
+            transform:translateX(0%) ;
+        }
+        50% {
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+/* animation expand */
+    .trans-item {
+        transition: width 2s;
+    }
+
+    .second-trans{
+        /* background: #000; */
+        transition: 2s ease;
+    }
+
+    .habit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 420px;
+        height: 100px;
+        transition: 2s ease;
+        padding-top:5px;
+    }
+    .habit:not(last-child){
+        margin-right:10px;
+    }
+    .habit:hover{
+        height: 400px;
+    }
+    .width-trans:hover+.second-trans {
+        transition: 2s ease;
+        transform: translateY(160px);
+    }
+    @media only screen and (min-width: 768px) {
+        .width-trans:hover+.second-trans {
+            transform: translateY(80px);
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .width-trans:hover+.second-trans {
+            transform: translateY(110px);
+        }
+    }
+    @media only screen and (min-width: 1280px) {
+        .width-trans:hover+.second-trans {
+            transform: translateY(145px);
+        }
+    }
