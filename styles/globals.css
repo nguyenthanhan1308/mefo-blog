@@ -57,6 +57,7 @@
     .second-trans{
         /* background: #000; */
         transition: 2s ease;
+        margin-top: 0.5rem;
     }
 
     .habit{
@@ -66,25 +67,23 @@
         height: 100px;
         transition: 2s ease;
         padding-top:5px;
-    }
-    .habit:not(last-child){
+
     }
     .habit:hover{
         height: 400px;
     }
-    .width-trans:hover+.second-trans {
-        transition: 2s ease;
-        transform: translateY(160px);
-    }
+
     @media only screen and (min-width: 768px) {
         .width-trans:hover+.second-trans {
             transform: translateY(80px);
         }
+
     }
     @media only screen and (min-width: 1024px) {
         .width-trans:hover+.second-trans {
             transform: translateY(110px);
         }
+
     }
     @media only screen and (min-width: 1280px) {
         .width-trans:hover+.second-trans {
