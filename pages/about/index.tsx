@@ -5,7 +5,7 @@ function index() {
     return (
         <div className="text-sega max-w-7xl mx-auto transition duration-300 p-2">
             <div className="flex flex-col my-5 ">
-                <p className="mx-auto text-4xl">ABOUT ME</p>
+                <p className="mx-auto text-2xl md:text-4xl">ABOUT ME</p>
                 <hr className="max-w-lg w-full my-5 mx-auto border border-green-500" />
             </div>
             <div className="width-trans group transition duration-200 flex justify-center md:h-[242px] lg:h-[330px] xl:h-[420px]">
