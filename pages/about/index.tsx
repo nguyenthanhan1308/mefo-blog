@@ -32,7 +32,7 @@ function index() {
                             Final Fantasy
                         </p>
                     </div>
-                    <div className=" box-border trans-item w-[364px] group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
+                    <div className="box-border trans-item w-[364px] group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
                         <img
                             className="aspect-video shadow-lg shadow-black"
                             src="https://i.ibb.co/vYBH3wH/cs-val.webp"
@@ -40,15 +40,18 @@ function index() {
                         />
                     </div>
                 </div>
-                <div className="second-trans mx-auto flex justify-between w-full mb-40">
-                    <div className="habit text-lg shadow shadow-green-600 w-[240px] lg:w-[330px] xl:w-[410px] ">
-                        Gaming
-                    </div>
-                    <div className="habit text-lg shadow shadow-yellow-600 w-[240px] lg:w-[330px] xl:w-[410px] ">
-                        Programming
-                    </div>
-                    <div className="habit text-lg shadow shadow-red-600 w-[240px] lg:w-[330px] xl:w-[410px]">
-                        Eating
+                <div className="second-trans mx-auto  w-full mb-40">
+                    <hr className="max-w-lg w-full my-5 mx-auto border border-green-500" />
+                    <div className="flex justify-between">
+                        <div className="habit text-lg shadow shadow-green-600 w-[240px] lg:w-[330px] xl:w-[410px] ">
+                            Gaming
+                        </div>
+                        <div className="habit text-lg shadow shadow-yellow-600 w-[240px] lg:w-[330px] xl:w-[410px] ">
+                            Programming
+                        </div>
+                        <div className="habit text-lg shadow shadow-red-600 w-[240px] lg:w-[330px] xl:w-[410px]">
+                            Eating
+                        </div>
                     </div>
                 </div>
             </div>
