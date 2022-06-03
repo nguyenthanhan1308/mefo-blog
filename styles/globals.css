@@ -8,8 +8,8 @@
 
     }
     @font-face{
-            font-family: 'Sega';
-            src: url('../asset/Sega/SEGA.ttf');
+        font-family: 'Sega';
+        src: url('../asset/Sega/SEGA.TTF');
     }
     .text-val{
         font-family:"Valorant";
