@@ -57,13 +57,13 @@ function index() {
                 <div className="second-trans mx-auto  w-full mb-40">
                     <hr className="max-w-lg w-full my-5 mx-auto border border-green-500" />
                     <div className="flex justify-between">
-                        <div className="habit text-xs md:text-lg shadow shadow-green-600 w-[130px] md:w-[245px] lg:w-[330px] xl:w-[410px] ">
+                        <div className="habit text-xs md:text-lg shadow shadow-green-600 w-[7.2rem] md:w-[245px] lg:w-[330px] xl:w-[410px] ">
                             Gaming
                         </div>
-                        <div className="habit text-xs md:text-lg shadow shadow-yellow-600 w-[130px] md:w-[245px] lg:w-[330px] xl:w-[410px] ">
+                        <div className="habit text-xs md:text-lg shadow shadow-yellow-600 w-[7.2rem] md:w-[245px] lg:w-[330px] xl:w-[410px] ">
                             Programming
                         </div>
-                        <div className="habit text-xs md:text-lg shadow shadow-red-600 w-[130px] md:w-[245px] lg:w-[330px] xl:w-[410px]">
+                        <div className="habit text-xs md:text-lg shadow shadow-red-600 w-[7.2rem] md:w-[245px] lg:w-[330px] xl:w-[410px]">
                             Eating
                         </div>
                     </div>
