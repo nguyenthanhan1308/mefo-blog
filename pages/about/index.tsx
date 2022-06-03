@@ -10,7 +10,16 @@ function index() {
             </div>
             <div className="width-trans group transition duration-200 flex justify-center md:h-[242px] lg:h-[330px] xl:h-[420px]">
                 <div className="box-border trans-item w-[364px]  group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
-                    <img className="shadow-lg shadow-black" src="https://i.ibb.co/fGPSnKQ/chill.jpg" alt="chill" />
+                    <img
+                        className="shadow-lg shadow-black group-hover:hidden"
+                        src="https://i.ibb.co/fGPSnKQ/chill.jpg"
+                        alt="chill"
+                    />
+                    <img
+                        className="shadow-lg shadow-black hidden group-hover:inline"
+                        src="https://i.ibb.co/z4z9YX2/halloween.jpg"
+                        alt="halloween"
+                    />
                 </div>
                 <div className="relative trans-item pl-4 text-sm md:text-2xl w-[364px] group-hover:w-[240px] lg:w-[492px] lg:group-hover:w-[328px] xl:w-[640px] xl:group-hover:w-[415px] ">
                     <p className="group-hover:opacity-0 transition duration-2 ease-in-out">A cat.</p>
@@ -34,9 +43,14 @@ function index() {
                     </div>
                     <div className="box-border trans-item w-[364px] group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
                         <img
-                            className="aspect-video shadow-lg shadow-black"
-                            src="https://i.ibb.co/vYBH3wH/cs-val.webp"
-                            alt="chill"
+                            className="aspect-video shadow-lg shadow-black group-hover:hidden"
+                            src="https://i.ibb.co/ky65KBf/val-cs.jpg"
+                            alt="csval"
+                        />
+                        <img
+                            className="aspect-video shadow-lg shadow-black group-hover:inline hidden"
+                            src="https://i.ibb.co/4NNR6VZ/starter.jpg"
+                            alt="starter"
                         />
                     </div>
                 </div>
