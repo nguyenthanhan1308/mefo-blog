@@ -22,7 +22,7 @@ function index() {
                     />
                 </div>
                 <div className="relative trans-item pl-4 text-sm md:text-2xl w-[364px] group-hover:w-[240px] lg:w-[492px] lg:group-hover:w-[328px] xl:w-[640px] xl:group-hover:w-[415px] ">
-                    <p className="group-hover:opacity-0 transition duration-2 ease-in-out">A cat.</p>
+                    <p className="group-hover:opacity-0 transition duration-2 ease-in-out">A cat lover.</p>
                     <p className="group-hover:opacity-100 opacity-0 top-0 absolute transition duration-2 ease-in-out">
                         A Developer <br /> A Google researcher <br />
                     </p>
