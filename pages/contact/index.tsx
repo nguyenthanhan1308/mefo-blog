@@ -17,7 +17,7 @@ function index() {
                         alt=""
                     />
                     <div className="w-full hidden group-hover:flex justify-center">
-                        <a href={`https://discord.gg/rJWYVjc`}>
+                        <a href={`https://discord.gg/rJWYVjc`} target="_blank">
                             <b className="text-serif">DISCORD</b>
                         </a>
                     </div>
