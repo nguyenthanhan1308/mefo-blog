@@ -22,6 +22,23 @@ function index() {
                         </a>
                     </div>
                 </div>
+                {/* facebook */}
+                <div
+                    key="facebook"
+                    className={`mb-5 rounded-full shadow shadow-black h-24 w-24 mx-auto flex items-center bg-[#3B5998] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
+                >
+                    <img
+                        src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
+                        className={`ml-[15px] mb-[5px]  w-12 h-14 object-cover transition 
+                            group-hover:animate-pulse`}
+                        alt=""
+                    />
+                    <div className="w-full hidden group-hover:flex justify-center">
+                        <a href="https://www.facebook.com/meomattroi1308/" target="_blank">
+                            <b className="text-serif">FACEBOOK</b>
+                        </a>
+                    </div>
+                </div>
                 {/* gmail */}
                 <div
                     key="gmail"
@@ -44,29 +61,12 @@ function index() {
                 >
                     <img
                         src={`https://i.ibb.co/CJgPyWw/phone-call-icon.png`}
-                        className={`ml-[15px]  w-16 h-16 object-cover transition 
+                        className={`ml-[15px] w-16 h-16 object-cover transition 
                             group-hover:animate-ringging`}
                         alt=""
                     />
                     <div className="w-full hidden group-hover:flex justify-center">
                         <b className="text-serif">+84 978699454</b>
-                    </div>
-                </div>
-                {/* facebook */}
-                <div
-                    key="facebook"
-                    className={`mb-5 rounded-full shadow shadow-black h-24 w-24 mx-auto flex items-center bg-[#3B5998] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
-                >
-                    <img
-                        src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
-                        className={`ml-[15px] mb-[5px]  w-12 h-14 object-cover transition 
-                            group-hover:animate-pulse`}
-                        alt=""
-                    />
-                    <div className="w-full hidden group-hover:flex justify-center">
-                        <a href="https://www.facebook.com/meomattroi1308/" target="_blank">
-                            <b className="text-serif">FACEBOOK</b>
-                        </a>
                     </div>
                 </div>
             </div>
