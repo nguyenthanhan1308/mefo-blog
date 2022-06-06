@@ -18,7 +18,7 @@ function Header() {
                     <Link href="/contact">
                         <h3>Contact</h3>
                     </Link>
-                    <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">Follow</h3>
+                    <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">Projects</h3>
                 </div>
             </div>
             {/* <div className="hidden md:flex items-center space-x-5 text-green-600 child:cursor-pointer">
