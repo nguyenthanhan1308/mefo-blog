@@ -1,7 +1,7 @@
 function index() {
     return (
-        <div className="md:max-w-7xl max-w-xl mx-auto relative my-10">
-            <div className="flex flex-col my-5 ">
+        <div className=" text-sega max-w-7xl mx-auto transition duration-300 p-2">
+            <div className="flex flex-col my-5 text-sega">
                 <p className="mx-auto text-2xl md:text-4xl">CONTACT</p>
                 <hr className="max-w-lg w-full my-5 mx-auto border border-green-500" />
             </div>
@@ -30,7 +30,7 @@ function index() {
                     <img
                         src={`https://i.ibb.co/sV69Yvx/gmail-logo-removebg-preview.png`}
                         className={`ml-[15px] scale-x-[1.35] scale-y-[1.2] mt-2 w-16 h-16 object-cover transition 
-                            group-hover:animate-bounce`}
+                            group-hover:animate-flip`}
                         alt=""
                     />
                     <div className="w-full hidden group-hover:flex justify-center">

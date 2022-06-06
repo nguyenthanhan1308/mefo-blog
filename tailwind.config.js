@@ -22,10 +22,19 @@ module.exports = {
                         transform: "rotate(20deg)",
                     },
                 },
+                flip: {
+                    "from": {
+                        transform: "rotateX(0deg)",
+                    },
+                    "to": {
+                        transform: "rotateX(-360deg)",
+                    },
+                },
             },
             animation: {
                 shaking: "shaking 2s infinite alternate",
                 ringging: "ringging 1s infinite alternate",
+                flip: "flip 2s infinite linear ",
             },
             screens: {
                 xxs: "480px",
