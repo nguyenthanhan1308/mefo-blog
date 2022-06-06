@@ -95,9 +95,11 @@
     --angle: 0deg;
     border: 2px solid;
     border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
-    animation: 3s rotateGradient linear infinite;
+    animation: 3s rotateGradient linear infinite ;
 }
-
+/* .shaking {
+    animation: 1s shaking infinite alternate;
+} */
 @keyframes rotateGradient {
     to {
         --angle: 360deg;
