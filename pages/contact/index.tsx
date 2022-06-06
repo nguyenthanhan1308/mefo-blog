@@ -1,6 +1,6 @@
 function index() {
     return (
-        <div className=" text-sega max-w-7xl mx-auto transition duration-300 p-2">
+        <div className="max-w-7xl mx-auto transition duration-300 p-2">
             <div className="flex flex-col my-5 text-sega">
                 <p className="mx-auto text-2xl md:text-4xl">CONTACT</p>
                 <hr className="max-w-lg w-full my-5 mx-auto border border-green-500" />
