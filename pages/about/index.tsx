@@ -1,6 +1,4 @@
 import React from 'react'
-import Container from './../../components/Container';
-
 function index() {
     return (
         <div className="text-sega max-w-7xl mx-auto transition duration-300 p-2">

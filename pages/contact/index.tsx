@@ -1,4 +1,3 @@
-import Link from "next/link";
 function index() {
     return (
         <div className="md:max-w-7xl max-w-xl mx-auto relative my-10">
@@ -60,7 +59,7 @@ function index() {
                 >
                     <img
                         src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
-                        className={`ml-[15px] mt-2 w-16 h-16 object-cover transition 
+                        className={`ml-[15px] mb-[5px] mt-2 w-12 h-14 object-cover transition 
                             group-hover:animate-pulse`}
                         alt=""
                     />
