@@ -9,7 +9,7 @@ function index() {
                 {/* discord */}
                 <div
                     key="discord"
-                    className={`mb-5 rounded-full border h-24 w-24 mx-auto flex items-center bg-[#5865F2] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
+                    className={`mb-5  rounded-full shadow shadow-black h-24 w-24 mx-auto flex items-center bg-[#5865F2] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
                 >
                     <img
                         src={`https://i.ibb.co/sJySCwz/discord-logo-removebg-preview.png`}
@@ -25,7 +25,7 @@ function index() {
                 {/* gmail */}
                 <div
                     key="gmail"
-                    className={`mb-5 rounded-full border h-24 w-24 mx-auto flex items-center bg-[#DB4437] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
+                    className={`mb-5 rounded-full shadow shadow-black  h-24 w-24 mx-auto flex items-center bg-[#DB4437] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
                     <img
                         src={`https://i.ibb.co/sV69Yvx/gmail-logo-removebg-preview.png`}
@@ -40,7 +40,7 @@ function index() {
                 {/* phone */}
                 <div
                     key="phone"
-                    className={`mb-5 rounded-full border h-24 w-24 mx-auto flex items-center bg-[#34c934] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
+                    className={`mb-5 rounded-full shadow shadow-black h-24 w-24 mx-auto flex items-center bg-[#34c934] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
                     <img
                         src={`https://i.ibb.co/CJgPyWw/phone-call-icon.png`}
@@ -55,7 +55,7 @@ function index() {
                 {/* facebook */}
                 <div
                     key="facebook"
-                    className={`mb-5 rounded-full border h-24 w-24 mx-auto flex items-center bg-[#3B5998] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
+                    className={`mb-5 rounded-full shadow shadow-black h-24 w-24 mx-auto flex items-center bg-[#3B5998] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
                 >
                     <img
                         src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
