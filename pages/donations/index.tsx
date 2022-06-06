@@ -2,6 +2,7 @@ function index() {
     return (
         <div className="md:max-w-7xl max-w-xl mx-auto relative my-10">
             <img
+                loading="lazy"
                 className="border border-black"
                 src="https://i.ibb.co/6mztxR5/donations.jpg"
                 alt="credit"
@@ -17,9 +18,7 @@ function index() {
                     shape="rect"
                 />
             </map>
-            <div    
-                className="text-val absolute bottom-[0] inset-x-1/3 lg:bottom-[2%] child:mx-auto"
-            >
+            <div className="text-val absolute bottom-[0] inset-x-1/3 lg:bottom-[2%] child:mx-auto">
                 <p className="hidden md:inline text-xl lg:text-2xl ">
                     PLEASE DONATE FOR <br /> NEW VALORANT SKINS
                 </p>
