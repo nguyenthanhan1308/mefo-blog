@@ -29,7 +29,7 @@ function index() {
                 >
                     <img
                         src={`https://i.ibb.co/sV69Yvx/gmail-logo-removebg-preview.png`}
-                        className={`ml-[15px] scale-x-[1.35] scale-y-[1.2] mt-2 w-16 h-16 object-cover transition 
+                        className={`ml-[15px] scale-x-[1.35] scale-y-[1.2]  w-16 h-16 object-cover transition 
                             group-hover:animate-flip`}
                         alt=""
                     />
@@ -44,7 +44,7 @@ function index() {
                 >
                     <img
                         src={`https://i.ibb.co/CJgPyWw/phone-call-icon.png`}
-                        className={`ml-[15px] mt-2 w-16 h-16 object-cover transition 
+                        className={`ml-[15px]  w-16 h-16 object-cover transition 
                             group-hover:animate-ringging`}
                         alt=""
                     />
@@ -59,7 +59,7 @@ function index() {
                 >
                     <img
                         src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
-                        className={`ml-[15px] mb-[5px] mt-2 w-12 h-14 object-cover transition 
+                        className={`ml-[15px] mb-[5px]  w-12 h-14 object-cover transition 
                             group-hover:animate-pulse`}
                         alt=""
                     />
