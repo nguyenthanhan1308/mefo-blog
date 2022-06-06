@@ -13,7 +13,7 @@ function index() {
                 >
                     <img
                         src={`https://i.ibb.co/sJySCwz/discord-logo-removebg-preview.png`}
-                        className={`ml-[15px] mt-2 w-16 h-16 object-cover  transition group-hover:animate-shaking`}
+                        className={`ml-[15px] mt-4 w-16 h-16 object-cover  transition group-hover:animate-shaking`}
                         alt=""
                     />
                     <div className="w-full hidden group-hover:flex justify-center">
