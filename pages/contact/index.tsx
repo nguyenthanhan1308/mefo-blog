@@ -9,7 +9,7 @@ function index() {
                 {/* discord */}
                 <div
                     key="discord"
-                    className={`mb-5  rounded-full shadow shadow-black h-24 w-24 mx-auto flex items-center bg-[#5865F2] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
+                    className={`mb-5 rounded-full shadow shadow-black h-24 w-24 mx-auto flex items-center bg-[#5865F2] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
                 >
                     <img
                         src={`https://i.ibb.co/sJySCwz/discord-logo-removebg-preview.png`}
