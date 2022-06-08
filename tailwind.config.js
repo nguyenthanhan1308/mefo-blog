@@ -44,7 +44,7 @@ module.exports = {
                 shaking: "shaking 2s infinite alternate",
                 ringging: "ringging 1s infinite alternate",
                 flip: "flip 2s infinite linear ",
-                git: "git 2s  linear ",
+                git: "git 2s linear ",
             },
             screens: {
                 xxs: "480px",
