@@ -18,7 +18,7 @@ function index() {
                     shape="rect"
                 />
             </map>
-            <div className="text-val absolute bottom-[0] inset-x-1/3 lg:bottom-[2%] child:mx-auto">
+            <div className="dark:text-black text-val absolute bottom-[0] inset-x-1/3 lg:bottom-[2%] child:mx-auto">
                 <p className="hidden md:inline text-xl lg:text-2xl ">
                     PLEASE DONATE FOR <br /> NEW VALORANT SKINS
                 </p>
