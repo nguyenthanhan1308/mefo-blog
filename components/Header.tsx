@@ -1,19 +1,11 @@
 import Link from "next/link"
-import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 function Header() {
-    // const [theme, setTheme] = useState("light");
-    // useEffect(() => {
-    //     const item = localStorage.getItem("mode") ?? "light";
-    //     setTheme(item);
-    // }, [theme]);
-    // const setDarkMode = () =>{
-    //     if(theme==="dark"){
-    //         localStorage.setItem("mode","light");
-    //         return;
-    //     }
-    //     localStorage.setItem("mode","dark");
-    // }
+    const { theme, setTheme } = useTheme();
+    const setCurrentTheme = () =>{
+        setTheme(theme === "dark" ? "light" : "dark");
+    }
     return (
         <header className={`flex justify-center md:justify-between p-5 max-w-7xl mx-auto`}>
             <div className="flex item-center space-x-5">
@@ -35,9 +27,9 @@ function Header() {
                 </div>
             </div>
             <div className="hidden md:flex items-center space-x-5 text-green-600 child:cursor-pointer">
-                {/* <button className="" onClick={setDarkMode}>
-                    Dark
-                </button> */}
+                <button className="" onClick={setCurrentTheme}>
+                    Theme
+                </button>
                 {/* <h3>Sign In</h3>
                 <h3 className="border px-4 py-1 rounded-full border-green-600">Get Started</h3> */}
             </div>

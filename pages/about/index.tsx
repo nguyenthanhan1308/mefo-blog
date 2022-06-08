@@ -9,12 +9,12 @@ function index() {
             <div className="width-trans group transition duration-200 flex justify-center md:h-[242px] lg:h-[330px] xl:h-[420px]">
                 <div className="box-border trans-item w-[364px]  group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
                     <img
-                        className="shadow-lg shadow-black group-hover:hidden transition duration-300"
+                        className="dark:shadow-white shadow-lg shadow-black group-hover:hidden transition duration-300"
                         src="https://i.ibb.co/fGPSnKQ/chill.jpg"
                         alt="chill"
                     />
                     <img
-                        className="shadow-lg shadow-black hidden group-hover:inline transition duration-300"
+                        className="dark:shadow-white shadow-lg shadow-black hidden group-hover:inline transition duration-300"
                         src="https://i.ibb.co/z4z9YX2/halloween.jpg"
                         alt="halloween"
                     />
@@ -41,12 +41,12 @@ function index() {
                     </div>
                     <div className="box-border trans-item w-[364px] group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
                         <img
-                            className="aspect-video shadow-lg shadow-black group-hover:hidden transition duration-300"
+                            className="dark:shadow-white aspect-video shadow-lg shadow-black group-hover:hidden transition duration-300"
                             src="https://i.ibb.co/ky65KBf/val-cs.jpg"
                             alt="csval"
                         />
                         <img
-                            className="aspect-video shadow-lg shadow-black group-hover:inline hidden transition duration-300"
+                            className="dark:shadow-white aspect-video shadow-lg shadow-black group-hover:inline hidden transition duration-300"
                             src="https://i.ibb.co/4NNR6VZ/starter.jpg"
                             alt="starter"
                         />

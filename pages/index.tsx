@@ -70,7 +70,7 @@ export default function Home({ posts }: Props) {
                                 alt=""
                             />
                             <div className="flex justify-between p-5 bg-white ">
-                                <div>
+                                <div className="dark:text-black">
                                     <p className="text-lg font-bold">{post.title}</p>
                                     <p className="text-xs">
                                         {post.description} by <span className="text-green-600">{post.author.name}</span>

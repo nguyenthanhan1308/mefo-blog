@@ -1,4 +1,5 @@
 module.exports = {
+    darkMode: "class",
     content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
@@ -23,10 +24,10 @@ module.exports = {
                     },
                 },
                 flip: {
-                    "from": {
+                    from: {
                         transform: "rotateX(0deg)",
                     },
-                    "to": {
+                    to: {
                         transform: "rotateX(-360deg)",
                     },
                 },

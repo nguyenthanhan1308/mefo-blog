@@ -2,17 +2,11 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Header from "../components/Header";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { ThemeProvider } from "next-themes";
 
 const MyApp = ({ Component, pageProps }: AppProps, ) => {
-    // const [theme, setTheme] = useState("light");
-    // useEffect(() => {
-    //     const item = localStorage.getItem("mode") ?? "light";
-    //     setTheme(item);
-    // }, [theme]);
     return (
-        <div 
-            // className={`${theme === "dark" ? "bg-black" : null}`}
+        <ThemeProvider attribute="class" 
         >
             <Head>
                 <title>Journey to the end of life</title>
@@ -20,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps, ) => {
             </Head>
             <Header />
             <Component {...pageProps} />
-        </div>
+        </ThemeProvider>
     );
 };
 
