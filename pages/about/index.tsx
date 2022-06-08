@@ -4,7 +4,7 @@ function index() {
         <div className="text-sega max-w-7xl mx-auto transition duration-300 p-2">
             <div className="flex flex-col my-5 ">
                 <p className="mx-auto text-2xl md:text-4xl">ABOUT ME</p>
-                <hr className="max-w-lg w-full my-5 mx-auto border border-green-500" />
+                <hr className="max-w-lg w-full my-5 mx-auto border dark:border-yellow-500 border-green-500" />
             </div>
             <div className="width-trans group transition duration-200 flex justify-center md:h-[242px] lg:h-[330px] xl:h-[420px]">
                 <div className="box-border trans-item w-[364px]  group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
@@ -52,12 +52,12 @@ function index() {
                         />
                     </div>
                 </div>
-                <div className="second-trans mx-auto  w-full mb-40">
-                    <hr className="max-w-lg w-full my-5 mx-auto border border-green-500" />
+                <div className="second-trans mx-auto w-full mb-40">
+                    <hr className="max-w-lg w-full my-5 mx-auto border dark:border-yellow-500 border-green-500" />
                     <div className="flex justify-between">
                         <div className="habit text-xs md:text-lg gradient-animated shadow w-[7.2rem] md:w-[245px] lg:w-[330px] xl:w-[410px] group ">
                             Gaming
-                            <div className="opacity-0 group-hover:opacity-100 transition duration-1000 ease">
+                            <div className="opacity-0 group-hover:opacity-100 transition duration-100 ease">
                                 Valorant
                                 <br />
                                 CSGO
@@ -66,7 +66,7 @@ function index() {
                         </div>
                         <div className="habit text-xs md:text-lg gradient-animated shadow w-[7.2rem] md:w-[245px] lg:w-[330px] xl:w-[410px] group">
                             Programming
-                            <div className="opacity-0 group-hover:opacity-100 transition duration-1000 ease">
+                            <div className="opacity-0 group-hover:opacity-100 transition duration-100 ease">
                                 Javascript
                                 <br />
                                 ReactJS

@@ -13,7 +13,7 @@ export default function Home({ posts }: Props) {
     }
     return (
         <Container>
-            <div className="flex justify-between items-center bg-green-500 border-y border-black py-10 lg:py-0 text-white">
+            <div className="flex justify-between items-center dark:bg-yellow-500 bg-green-500 border-y border-black py-10 lg:py-0 text-white">
                 <div className={`running absolute cursor-pointer hidden xl:inline-block group`}>
                     <img
                         className={`rotating ${hideKemon&&`hidden`}`}
@@ -73,11 +73,11 @@ export default function Home({ posts }: Props) {
                                 <div className="dark:text-black">
                                     <p className="text-lg font-bold">{post.title}</p>
                                     <p className="text-xs">
-                                        {post.description} by <span className="text-green-600">{post.author.name}</span>
+                                        {post.description} by <span className="dark:text-yellow-600 bgtext-green-600">{post.author.name}</span>
                                     </p>
                                     <div className="flex">
                                         {post.categories.map(category => (
-                                            <p className="text-sm my-2 mr-2 p-2 text-white rounded-full bg-green-600 max-w-fit">
+                                            <p className="text-sm my-2 mr-2 p-2 text-white rounded-full dark:bg-yellow-600 bg-green-600 max-w-fit">
                                                 {category.title}
                                             </p>
                                         ))}

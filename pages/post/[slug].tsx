@@ -47,8 +47,8 @@ function Post({ post }: Props) {
                 <div className="flex items-center py-5">
                     <img className="h-14 w-14 rounded-full" src={urlFor(post.author.image).url()!} alt="" />
                     <p className="font-extralight text-sm px-3">
-                        Blog post by <span className="text-green-600">{post.author.name}</span> - Published at{" "}
-                        {new Date(post._createdAt).toLocaleString()}
+                        Blog post by <span className="dark:text-yellow-600 text-green-600">{post.author.name}</span> -
+                        Published at {new Date(post._createdAt).toLocaleString()}
                     </p>
                 </div>
                 <div>
@@ -71,43 +71,43 @@ function Post({ post }: Props) {
                 </div>
             </article>
 
-            <hr className="max-w-lg my-5 mx-auto border border-green-500" />
+            <hr className="max-w-lg my-5 mx-auto border dark:border-yellow-500 border-green-500" />
             {submmited ? (
-                <div className="flex flex-col p-10 my-10 bg-green-500 text-white max-w-2xl mx-auto">
+                <div className="flex flex-col p-10 my-10 dark:bg-yellow-500 bg-green-500 text-white max-w-2xl mx-auto">
                     <h3 className="text-3xl font-bold">Thank you for submitting your comment!</h3>
                     <p>Once it has been approved, it will appear below</p>
                 </div>
             ) : (
-                <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col p-5 max-w-2xl mx-auto mb-10">
-                    <h3 className="text-sm text-green-500">Enjoyed this article?</h3>
+                <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col p-5 max-w-2xl mx-auto mb-10">
+                    <h3 className="text-sm dark:text-yellow-500 text-green-500">Enjoyed this article?</h3>
                     <h4 className="text-3xl font-bold">Leave a comment below!</h4>
                     <hr className="py-3 mt-2" />
 
                     <input {...register("_id")} type="hidden" name="_id" value={post._id} />
 
                     <label className="block mb-5">
-                        <span className="text-gray-700">Name</span>
+                        <span className="dark:text-white text-gray-700">Name</span>
                         <input
                             {...register("name", { required: true })}
-                            className="shadow border rounded py-2 px-3 form-input w-full ring-green-500 focus:ring outline-none"
+                            className="shadow border rounded py-2 px-3 form-input w-full dark:ring-yellow-500 ring-green-500 focus:ring outline-none"
                             placeholder="Mefo Beso"
                             type="text"
                         />
                     </label>
                     <label className="block mb-5">
-                        <span className="text-gray-700">Email</span>
+                        <span className="dark:text-white text-gray-700">Email</span>
                         <input
                             {...register("email", { required: true })}
-                            className="shadow border rounded py-2 px-3 form-input w-full ring-green-500 focus:ring outline-none"
+                            className="shadow border rounded py-2 px-3 form-input w-full dark:ring-yellow-500 ring-green-500 focus:ring outline-none"
                             placeholder="Your email"
                             type="email"
                         />
                     </label>
                     <label className="block mb-5">
-                        <span className="text-gray-700">Comment</span>
+                        <span className="dark:text-white text-gray-700">Comment</span>
                         <textarea
                             {...register("comment", { required: true })}
-                            className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-green-500 outline-none focus:ring"
+                            className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full dark:ring-yellow-500 ring-green-500 outline-none focus:ring"
                             placeholder=""
                             rows={8}
                         />
@@ -120,17 +120,18 @@ function Post({ post }: Props) {
                     </div>
                     <input
                         type="submit"
-                        className="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white px-4 rounded font-bold py-2 cursor-pointer"
+                        className="shadow dark:bg-yellow-500 dark:hover:bg-yellow-400 bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white px-4 rounded font-bold py-2 cursor-pointer"
                     />
                 </form>
             )}
-            <div className="max-w-2xl flex flex-col my-10 p-10 shadow-green-500 mx-auto shadow space-y-2 ">
+            <div className="max-w-2xl flex flex-col my-10 p-10 dark:shadow-yellow-500 shadow-green-500 mx-auto shadow space-y-2 ">
                 <h3 className="text-4xl">Comments</h3>
                 <hr className="pb-2" />
                 {post.comments.map(comment => (
                     <div key={comment._id}>
                         <p>
-                            <span className="text-green-500">{comment.name}</span>:{" "}{comment.comment}
+                            <span className="dark:text-yellow-500 text-green-500">{comment.name}</span>:{" "}
+                            {comment.comment}
                         </p>
                     </div>
                 ))}
