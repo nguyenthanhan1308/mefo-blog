@@ -39,6 +39,23 @@ function index() {
                         </a>
                     </div>
                 </div>
+                {/* github */}
+                <div
+                    key="github"
+                    className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-black text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
+                >
+                    <img
+                        src={`https://i.ibb.co/CzT43pS/25231.png`}
+                        className={`ml-[15px] w-16 h-16 object-cover transition 
+                            group-hover:animate-git`}
+                        alt=""
+                    />
+                    <div className="w-full hidden group-hover:flex justify-center">
+                        <a href="https://github.com/nguyenthanhan1308" target="_blank" className="">
+                            <b className="text-serif">GITHUB</b>
+                        </a>
+                    </div>
+                </div>
                 {/* gmail */}
                 <div
                     key="gmail"
