@@ -1,8 +1,12 @@
 import Link from "next/link"
 import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
 function Header() {
     const { theme, setTheme } = useTheme();
+    useEffect(() =>{
+            setTheme("light")
+    },[])
     const setCurrentTheme = () =>{
         setTheme(theme === "dark" ? "light" : "dark");
     }
