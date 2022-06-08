@@ -13,7 +13,7 @@ export default function Home({ posts }: Props) {
     }
     return (
         <Container>
-            <div className="flex justify-between items-center dark:bg-yellow-500 bg-green-500 border-y border-black py-10 lg:py-0 text-white">
+            <div className="flex justify-between items-center dark:bg-yellow-500 bg-green-500 border-y border-black dark:border-white py-10 lg:py-0 text-white">
                 <div className={`running absolute cursor-pointer hidden xl:inline-block group`}>
                     <img
                         className={`rotating ${hideKemon&&`hidden`}`}
@@ -63,7 +63,7 @@ export default function Home({ posts }: Props) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6 ">
                 {posts.map(post => (
                     <Link key={post._id} href={`/post/${post.slug.current}`}>
-                        <div className="group cursor-pointer rounded-lg border overflow-hidden">
+                        <div className="group cursor-pointer rounded-lg borde overflow-hidden">
                             <img
                                 className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
                                 src={urlFor(post.mainImage).url()!}
