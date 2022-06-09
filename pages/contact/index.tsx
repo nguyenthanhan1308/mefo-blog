@@ -20,7 +20,7 @@ function index() {
                             height={64}
                             width={64}
                             src={discord}
-                            alt=""
+                            alt="discord-logo"
                         />
                     </div>
                     <div className="w-full hidden group-hover:flex justify-center">
@@ -34,13 +34,20 @@ function index() {
                     key="facebook"
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#3B5998] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
                 >
-                    <img
-                        loading="lazy"
-                        src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
-                        className={`ml-[15px] mb-[5px]  w-12 h-14 object-cover transition 
-                            group-hover:animate-pulse`}
-                        alt=""
-                    />
+                    <div
+                        className={`ml-[15px] mb-[5px]  w-12 h-14 object-cover transition
+                        group-hover:animate-pulse`}
+                    >
+                        <Image
+                            placeholder="blur"
+                            blurDataURL="/assets/image-placeholder.png"
+                            height={56}
+                            width={48}
+                            loading="lazy"
+                            src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
+                            alt="facebook-logo"
+                        />
+                    </div>
                     <div className="w-full hidden group-hover:flex justify-center">
                         <a href="https://www.facebook.com/meomattroi1308/" target="_blank">
                             <b className="text-serif">FACEBOOK</b>
@@ -52,13 +59,19 @@ function index() {
                     key="github"
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-black text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
-                    <img
-                        loading="lazy"
-                        src={`https://i.ibb.co/CzT43pS/25231.png`}
+                    <div
                         className={`ml-[15px] w-16 h-16 object-cover transition 
                             group-hover:animate-git`}
-                        alt=""
-                    />
+                    >
+                        <Image
+                            placeholder="blur"
+                            blurDataURL="/assets/image-placeholder.png"
+                            height={64}
+                            width={64}
+                            src={`https://i.ibb.co/CzT43pS/25231.png`}
+                            alt="github-logo"
+                        />
+                    </div>
                     <div className="w-full hidden group-hover:flex justify-center">
                         <a href="https://github.com/nguyenthanhan1308" target="_blank" className="">
                             <b className="text-serif">GITHUB</b>
@@ -70,13 +83,19 @@ function index() {
                     key="gmail"
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#DB4437] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
-                    <img
-                        loading="lazy"
-                        src={`https://i.ibb.co/sV69Yvx/gmail-logo-removebg-preview.png`}
-                        className={`ml-[15px] scale-x-[1.35] scale-y-[1.2]  w-16 h-16 object-cover transition 
-                            group-hover:animate-flip`}
-                        alt=""
-                    />
+                    <div
+                        className={`ml-[15px] transition
+                        group-hover:animate-flip`}
+                    >
+                        <Image
+                            placeholder="blur"
+                            blurDataURL="/assets/image-placeholder.png"
+                            height={80}
+                            width={70}
+                            src={`https://i.ibb.co/sV69Yvx/gmail-logo-removebg-preview.png`}
+                            alt="gmail-logo"
+                        />
+                    </div>
                     <div className="w-full hidden group-hover:flex justify-center">
                         <b className="text-serif">sunthanhan1308@gmail.com</b>
                     </div>
@@ -86,13 +105,20 @@ function index() {
                     key="phone"
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#34c934] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
-                    <img
-                        loading="lazy"
-                        src={`https://i.ibb.co/CJgPyWw/phone-call-icon.png`}
-                        className={`ml-[15px] w-16 h-16 object-cover transition 
-                            group-hover:animate-ringging`}
-                        alt=""
-                    />
+                    <div
+                        className={`ml-[15px] w-16 h-16 object-cover transition
+                                group-hover:animate-ringging`}
+                    >
+                        <Image
+                            placeholder="blur"
+                            blurDataURL="/assets/image-placeholder.png"
+                            height={64}
+                            width={64}
+                            loading="lazy"
+                            src={`https://i.ibb.co/CJgPyWw/phone-call-icon.png`}
+                            alt="phone"
+                        />
+                    </div>
                     <div className="w-full hidden group-hover:flex justify-center">
                         <b className="text-serif">+84 978699454</b>
                     </div>
