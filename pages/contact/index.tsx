@@ -16,7 +16,7 @@ function index() {
                     <div className={`ml-[15px] mt-4 object-cover  transition group-hover:animate-shaking`}>
                         <Image
                             placeholder="blur"
-                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
+                            blurDataURL="/assets/image-placeholder.png"
                             height={64}
                             width={64}
                             src={discord}

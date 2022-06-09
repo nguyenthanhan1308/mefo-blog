@@ -6,6 +6,8 @@ function index() {
                 height={1920}
                 width={1920}
                 loading="lazy"
+                placeholder="blur"
+                blurDataURL="/assets/image-placeholder.png"
                 className="border border-black"
                 src="https://i.ibb.co/6mztxR5/donations.jpg"
                 alt="credit"
@@ -31,11 +33,11 @@ function index() {
                 <p className="text-xs sm:text-md md:text-xl animate-bounce transition ease-in-out">
                     <span className="text-blue-600">BIDV</span>: 6211000860963
                 </p>
-                    <img
-                        className="h-[80px] w-[80px] xxs:h-[100px] xxs:w-[100px] xl:h-[160px] xl:w-[160px] "
-                        src="https://i.ibb.co/qJcvJF6/momo-jpg.png"
-                        alt="momo-jpg"
-                    />
+                <img
+                    className="h-[80px] w-[80px] xxs:h-[100px] xxs:w-[100px] xl:h-[160px] xl:w-[160px] "
+                    src="https://i.ibb.co/qJcvJF6/momo-jpg.png"
+                    alt="momo-jpg"
+                />
             </div>
         </div>
     );
