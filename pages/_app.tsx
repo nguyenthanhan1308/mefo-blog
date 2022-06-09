@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps, ) => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 5000);
     },[router.asPath])
     return (
         <ThemeProvider attribute="class">
