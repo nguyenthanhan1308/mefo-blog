@@ -4,8 +4,8 @@ import Header from "../components/Header";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
-import Loading from "../components/Loading";
 import { useRouter } from "next/router";
+import Loading from "../components/Loading";
 
 const MyApp = ({ Component, pageProps }: AppProps, ) => {
     const router = useRouter();
