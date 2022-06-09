@@ -1,4 +1,5 @@
 import Image from "next/image";
+import discord  from "../../public/discord.png"
 function index() {
     return (
         <div className="max-w-7xl mx-auto transition duration-300 p-2">
@@ -12,12 +13,16 @@ function index() {
                     key="discord"
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#5865F2] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
                 >
-                    <img
-                        loading="lazy"
-                        src={`https://i.ibb.co/sJySCwz/discord-logo-removebg-preview.png`}
-                        className={`ml-[15px] mt-4 w-16 h-16 object-cover  transition group-hover:animate-shaking`}
-                        alt=""
-                    />
+                    <div className={`ml-[15px] mt-4 object-cover  transition group-hover:animate-shaking`}>
+                        <Image
+                            placeholder="blur"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
+                            height={64}
+                            width={64}
+                            src={discord}
+                            alt=""
+                        />
+                    </div>
                     <div className="w-full hidden group-hover:flex justify-center">
                         <a href={`https://discord.gg/rJWYVjc`} target="_blank">
                             <b className="text-serif">DISCORD</b>

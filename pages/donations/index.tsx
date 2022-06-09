@@ -1,13 +1,16 @@
+import Image from "next/image";
 function index() {
     return (
         <div className="md:max-w-7xl max-w-xl mx-auto relative my-10">
-            <img
+            <Image
+                height={1920}
+                width={1920}
                 loading="lazy"
                 className="border border-black"
                 src="https://i.ibb.co/6mztxR5/donations.jpg"
                 alt="credit"
                 useMap="#image-map"
-            ></img>
+            ></Image>
             <map name="image-map">
                 <area
                     target="_blank"
@@ -28,11 +31,11 @@ function index() {
                 <p className="text-xs sm:text-md md:text-xl animate-bounce transition ease-in-out">
                     <span className="text-blue-600">BIDV</span>: 6211000860963
                 </p>
-                <img
-                    className="h-[80px] w-[80px] xxs:h-[100px] xxs:w-[100px] xl:h-[160px] xl:w-[160px] "
-                    src="https://i.ibb.co/qJcvJF6/momo-jpg.png"
-                    alt="momo-jpg"
-                ></img>
+                    <img
+                        className="h-[80px] w-[80px] xxs:h-[100px] xxs:w-[100px] xl:h-[160px] xl:w-[160px] "
+                        src="https://i.ibb.co/qJcvJF6/momo-jpg.png"
+                        alt="momo-jpg"
+                    />
             </div>
         </div>
     );
