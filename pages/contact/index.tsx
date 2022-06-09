@@ -1,3 +1,4 @@
+import Image from "next/image";
 function index() {
     return (
         <div className="max-w-7xl mx-auto transition duration-300 p-2">
@@ -12,6 +13,7 @@ function index() {
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#5865F2] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
                 >
                     <img
+                        loading="lazy"
                         src={`https://i.ibb.co/sJySCwz/discord-logo-removebg-preview.png`}
                         className={`ml-[15px] mt-4 w-16 h-16 object-cover  transition group-hover:animate-shaking`}
                         alt=""
@@ -28,6 +30,7 @@ function index() {
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#3B5998] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item cursor-pointer`}
                 >
                     <img
+                        loading="lazy"
                         src={`https://i.ibb.co/TBb671x/facebook-logo.png`}
                         className={`ml-[15px] mb-[5px]  w-12 h-14 object-cover transition 
                             group-hover:animate-pulse`}
@@ -45,6 +48,7 @@ function index() {
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-black text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
                     <img
+                        loading="lazy"
                         src={`https://i.ibb.co/CzT43pS/25231.png`}
                         className={`ml-[15px] w-16 h-16 object-cover transition 
                             group-hover:animate-git`}
@@ -62,6 +66,7 @@ function index() {
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#DB4437] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
                     <img
+                        loading="lazy"
                         src={`https://i.ibb.co/sV69Yvx/gmail-logo-removebg-preview.png`}
                         className={`ml-[15px] scale-x-[1.35] scale-y-[1.2]  w-16 h-16 object-cover transition 
                             group-hover:animate-flip`}
@@ -77,6 +82,7 @@ function index() {
                     className={`mb-5 rounded-full shadow shadow-black dark:shadow-white h-24 w-24 mx-auto flex items-center bg-[#34c934] text-white group hover:w-full hover:justify-start transition duration-300 ease-in-out trans-item`}
                 >
                     <img
+                        loading="lazy"
                         src={`https://i.ibb.co/CJgPyWw/phone-call-icon.png`}
                         className={`ml-[15px] w-16 h-16 object-cover transition 
                             group-hover:animate-ringging`}
