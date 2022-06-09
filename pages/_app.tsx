@@ -3,17 +3,27 @@ import type { AppProps } from "next/app";
 import Header from "../components/Header";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
+import { useEffect, useState } from "react";
+import Loading from "../components/Loading";
+import { useRouter } from "next/router";
 
 const MyApp = ({ Component, pageProps }: AppProps, ) => {
+    const router = useRouter();
+    const [loading,setLoading] =useState(false)
+    useEffect(() =>{
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+    },[router.asPath])
     return (
-        <ThemeProvider attribute="class" 
-        >
+        <ThemeProvider attribute="class">
             <Head>
                 <title>Journey to the end of life</title>
                 <link rel="icon" href="/coin.ico" />
             </Head>
             <Header />
-            <Component {...pageProps} />
+            {loading ? <Loading /> : <Component {...pageProps} />}
         </ThemeProvider>
     );
 };
