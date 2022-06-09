@@ -5,7 +5,7 @@ import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Loading from "../components/Loading";
+import CatLoading from "../components/CatLoading";
 
 const MyApp = ({ Component, pageProps }: AppProps, ) => {
     const router = useRouter();
@@ -23,7 +23,7 @@ const MyApp = ({ Component, pageProps }: AppProps, ) => {
                 <link rel="icon" href="/coin.ico" />
             </Head>
             <Header />
-            {loading ? <Loading /> : <Component {...pageProps} />}
+            {loading ? <CatLoading /> : <Component {...pageProps} />}
         </ThemeProvider>
     );
 };
