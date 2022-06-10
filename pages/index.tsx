@@ -3,6 +3,7 @@ import { sanityClient, urlFor } from "../sanity";
 import { Post } from "./typing";
 import { useState } from "react";
 import Container from './../components/Container';
+
 interface Props {
     posts: [Post];
 }
