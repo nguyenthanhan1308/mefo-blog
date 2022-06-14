@@ -25,7 +25,7 @@ function Header() {
                 <div className="hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-300 child:ease-in-out child:uppercase">
                     <Link href="/about">
                         <h3
-                            className={`hover:bg-green-600 dark:hover:bg-yellow-600 hover:text-white ${
+                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
                                 router.asPath === "/about" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
                             }`}
                         >
@@ -34,7 +34,7 @@ function Header() {
                     </Link>
                     <Link href="/contact">
                         <h3
-                            className={`hover:bg-green-600 dark:hover:bg-yellow-600 hover:text-white ${
+                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
                                 router.asPath === "/contact" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
                             }`}
                         >
@@ -42,7 +42,7 @@ function Header() {
                         </h3>
                     </Link>
                     <h3
-                        className={`hover:bg-green-600 dark:hover:bg-yellow-600 hover:text-white ${
+                        className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
                             router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
                         }`}
                     >
