@@ -1,4 +1,3 @@
-import React from 'react'
 function index() {
     return (
         <div className="text-sega max-w-7xl mx-auto transition duration-300 p-2">
@@ -89,4 +88,4 @@ function index() {
     );
 }
 
-export default index
+export default index;

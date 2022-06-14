@@ -1,6 +1,8 @@
 import Image from "next/image";
 import discord  from "../../public/discord.png"
 function index() {
+    const blurImg =
+        "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q==";
     return (
         <div className="max-w-7xl mx-auto transition duration-300 p-2">
             <div className="flex flex-col my-5 text-sega">
@@ -16,7 +18,7 @@ function index() {
                     <div className={`ml-[15px] mt-4 object-cover  transition group-hover:animate-shaking`}>
                         <Image
                             placeholder="blur"
-                            blurDataURL="/assets/image-placeholder.png"
+                            blurDataURL={blurImg}
                             height={64}
                             width={64}
                             src={discord}
@@ -40,7 +42,7 @@ function index() {
                     >
                         <Image
                             placeholder="blur"
-                            blurDataURL="/assets/image-placeholder.png"
+                            blurDataURL={blurImg}
                             height={56}
                             width={48}
                             loading="lazy"
@@ -65,7 +67,7 @@ function index() {
                     >
                         <Image
                             placeholder="blur"
-                            blurDataURL="/assets/image-placeholder.png"
+                            blurDataURL={blurImg}
                             height={64}
                             width={64}
                             src={`https://i.ibb.co/CzT43pS/25231.png`}
@@ -89,7 +91,7 @@ function index() {
                     >
                         <Image
                             placeholder="blur"
-                            blurDataURL="/assets/image-placeholder.png"
+                            blurDataURL={blurImg}
                             height={80}
                             width={70}
                             src={`https://i.ibb.co/sV69Yvx/gmail-logo-removebg-preview.png`}
@@ -111,7 +113,7 @@ function index() {
                     >
                         <Image
                             placeholder="blur"
-                            blurDataURL="/assets/image-placeholder.png"
+                            blurDataURL={blurImg}
                             height={64}
                             width={64}
                             loading="lazy"
@@ -128,4 +130,4 @@ function index() {
     );
 }
 
-export default index
+export default index;

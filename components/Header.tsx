@@ -1,7 +1,9 @@
-import Link from "next/link"
+import Link from "next/link";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 
 function Header() {
+    const router = useRouter();
     const { theme, setTheme } = useTheme();
     const setCurrentTheme = () =>{
         setTheme(theme === "dark" ? "light" : "dark");
@@ -20,14 +22,14 @@ function Header() {
                         alt=""
                     />
                 </Link>
-                <div className="hidden md:inline-flex items-center space-x-5 child:cursor-pointer">
+                <div className="hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-300 child:ease-in-out">
                     <Link href="/about">
-                        <h3>About</h3>
+                        <h3 className={`hover:bg-green-600 hover:text-white ${router.asPath === '/about' ? 'header-bg':''}`}>About</h3>
                     </Link>
                     <Link href="/contact">
-                        <h3>Contact</h3>
+                        <h3 className={`hover:bg-green-600 hover:text-white ${router.asPath === '/contact' ? 'header-bg':''}`}>Contact</h3>
                     </Link>
-                    <h3 className="text-white dark:bg-yellow-600 bg-green-600 px-4 py-1 rounded-full">Projects</h3>
+                        <h3 className={`hover:bg-green-600 hover:text-white ${router.asPath === '/projects' ? 'header-bg':''}`}>Projects</h3>
                 </div>
             </div>
             <div className="hidden md:flex items-center space-x-5 text-yellow-600 child:cursor-pointer">
@@ -48,4 +50,4 @@ function Header() {
     );
 }
 
-export default Header
+export default Header;
