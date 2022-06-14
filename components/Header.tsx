@@ -22,7 +22,7 @@ function Header() {
                         alt=""
                     />
                 </Link>
-                <div className="hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-300 child:ease-in-out child:uppercase">
+                <div className="hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase">
                     <Link href="/about">
                         <h3
                             className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${

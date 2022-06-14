@@ -55,7 +55,6 @@
     }
 
     .second-trans{
-        /* background: #000; */
         transition: 2s ease;
         margin-top: 0.5rem;
     }
@@ -97,14 +96,7 @@
     border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
     animation: 3s rotateGradient linear infinite ;
 }
-.header-bg{
-    background-color: green;
-    color:white;
-}
-.header-dark-bg{
-    background-color: yellow!important;
-    color: white;
-}
+
 @keyframes rotateGradient {
     to {
         --angle: 360deg;

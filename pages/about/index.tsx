@@ -6,7 +6,7 @@ function index() {
                 <hr className="max-w-lg w-full my-5 mx-auto border dark:border-yellow-500 border-green-500" />
             </div>
             <div className="width-trans group transition duration-200 flex justify-center md:h-[242px] lg:h-[330px] xl:h-[420px]">
-                <div className="box-border trans-item w-[364px]  group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
+                <div className="box-border trans-item w-[364px] group-hover:w-[485px] lg:w-[492px] lg:group-hover:w-[656px] xl:w-[640px] xl:group-hover:w-[855px]">
                     <img
                         className="dark:shadow-white shadow-lg shadow-black group-hover:hidden transition duration-300"
                         src="https://i.ibb.co/fGPSnKQ/chill.jpg"
