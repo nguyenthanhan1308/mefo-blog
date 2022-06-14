@@ -22,14 +22,32 @@ function Header() {
                         alt=""
                     />
                 </Link>
-                <div className="hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-300 child:ease-in-out">
+                <div className="hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-300 child:ease-in-out child:uppercase">
                     <Link href="/about">
-                        <h3 className={`hover:bg-green-600 hover:text-white ${router.asPath === '/about' ? 'header-bg':''}`}>About</h3>
+                        <h3
+                            className={`hover:bg-green-600 dark:hover:bg-yellow-600 hover:text-white ${
+                                router.asPath === "/about" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                            }`}
+                        >
+                            About
+                        </h3>
                     </Link>
                     <Link href="/contact">
-                        <h3 className={`hover:bg-green-600 hover:text-white ${router.asPath === '/contact' ? 'header-bg':''}`}>Contact</h3>
+                        <h3
+                            className={`hover:bg-green-600 dark:hover:bg-yellow-600 hover:text-white ${
+                                router.asPath === "/contact" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                            }`}
+                        >
+                            Contact
+                        </h3>
                     </Link>
-                        <h3 className={`hover:bg-green-600 hover:text-white ${router.asPath === '/projects' ? 'header-bg':''}`}>Projects</h3>
+                    <h3
+                        className={`hover:bg-green-600 dark:hover:bg-yellow-600 hover:text-white ${
+                            router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                        }`}
+                    >
+                        Projects
+                    </h3>
                 </div>
             </div>
             <div className="hidden md:flex items-center space-x-5 text-yellow-600 child:cursor-pointer">

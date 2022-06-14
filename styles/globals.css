@@ -101,6 +101,10 @@
     background-color: green;
     color:white;
 }
+.header-dark-bg{
+    background-color: yellow!important;
+    color: white;
+}
 @keyframes rotateGradient {
     to {
         --angle: 360deg;
