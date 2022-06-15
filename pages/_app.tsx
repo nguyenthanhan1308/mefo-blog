@@ -22,7 +22,8 @@ const MyApp = ({ Component, pageProps }: AppProps, ) => {
                 <link rel="icon" href="/coin.ico" />
             </Head>
             <Header />
-            {loading ? <LoadingCat /> : <Component {...pageProps}/>}
+            <LoadingCat/>
+            {/* {loading ? <LoadingCat /> : <Component {...pageProps}/>} */}
         </ThemeProvider>
     );
 };
