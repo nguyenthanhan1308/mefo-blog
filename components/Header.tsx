@@ -41,13 +41,15 @@ function Header() {
                             Contact
                         </h3>
                     </Link>
-                    <h3
-                        className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
-                            router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
-                        }`}
-                    >
-                        Projects
-                    </h3>
+                    <Link href="/projects">
+                        <h3
+                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                                router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                            }`}
+                        >
+                            Projects
+                        </h3>
+                    </Link>
                 </div>
             </div>
             <div className="hidden md:flex items-center space-x-5 text-yellow-600 child:cursor-pointer">
