@@ -75,7 +75,7 @@ export default function Home({ posts }: Props) {
                                     <div className="dark:text-black">
                                         <p className="text-lg font-bold">{post.title}</p>
                                         <p className="text-xs">
-                                            {post.description} by <span className="dark:text-yellow-600 bgtext-green-600">{post.author.name}</span>
+                                            {post.description} by <span className="dark:text-yellow-600 text-green-600">{post.author.name}</span>
                                         </p>
                                         <div className="flex">
                                             {post.categories.map(category => (
