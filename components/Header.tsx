@@ -17,58 +17,60 @@ function Header() {
         setShowNavbar(!showNavbar);
     }
     const renderMobileNavbar =()=>{
-        return (<>
-            <div className={`w-full h-12 md:hidden flex justify-between items-center `}>
-                <Link href="/">
-                    <img
-                        className="w-44 object-contain cursor-pointer"
-                        src={
-                            theme === "dark"
-                                ? "https://i.ibb.co/q7dJgb7/yellow-logo-removebg-preview.png"
-                                : `https://i.ibb.co/6bLGmkt/logo.png`
-                        }
-                        alt=""
+        return (
+            <>
+                <div className={`w-full h-20 md:hidden flex justify-between items-center relative`}>
+                    <Link href="/">
+                        <img
+                            className="w-44 object-contain cursor-pointer"
+                            src={
+                                theme === "dark"
+                                    ? "https://i.ibb.co/q7dJgb7/yellow-logo-removebg-preview.png"
+                                    : `https://i.ibb.co/6bLGmkt/logo.png`
+                            }
+                            alt=""
+                        />
+                    </Link>
+                    <MenuIcon
+                        onClick={navbarToggle}
+                        className="md:hidden text-green-500 h-6 cursor-pointertransition duration-300 pr-5"
                     />
-                </Link>
-                <MenuIcon
-                    onClick={navbarToggle}
-                    className="md:hidden text-green-500 h-6 cursor-pointertransition duration-300 pr-5"
-                />
-            </div>
-            <div
-                className={`${
-                    showNavbar ? "" : "hidden"
-                } w-full md:hidden  child:cursor-pointer child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase`}
-            >
-                <Link href="/about">
-                    <h3
-                        className={`ml-10  hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
-                            router.asPath === "/about" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
-                        }`}
-                    >
-                        About
-                    </h3>
-                </Link>
-                <Link href="/contact">
-                    <h3
-                        className={`ml-10  hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
-                            router.asPath === "/contact" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
-                        }`}
-                    >
-                        Contact
-                    </h3>
-                </Link>
-                <Link href="/projects">
-                    <h3
-                        className={`ml-10  hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
-                            router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
-                        }`}
-                    >
-                        Projects
-                    </h3>
-                </Link>
-            </div>
-        </>)
+                </div>
+                <div
+                    className={`${
+                        showNavbar ? "absolute opacity-100" : "hidden opacity-0"
+                    } md:hidden w-full transition ease-in-out duration-3000 bg-white top-20 z-10 child:cursor-pointer child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase child:border-t child:border-black`}
+                >
+                    <Link href="/about">
+                        <div
+                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                                router.asPath === "/about" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                            }`}
+                        >
+                            <h3 className={`pl-6`}>About &rarr;</h3>
+                        </div>
+                    </Link>
+                    <Link href="/contact">
+                        <div
+                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                                router.asPath === "/contact" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                            }`}
+                        >
+                            <h3 className={`pl-6`}>Contact &rarr;</h3>
+                        </div>
+                    </Link>
+                    <Link href="/projects">
+                        <div
+                            className={`border-b hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                                router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                            }`}
+                        >
+                            <h3 className={`pl-6`}>Projects &rarr;</h3>
+                        </div>
+                    </Link>
+                </div>
+            </>
+        );
     }
     const renderMD = () => {
         return (
