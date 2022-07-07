@@ -18,10 +18,10 @@ function Header() {
     }
     const renderMobileNavbar =()=>{
         return (<>
-            <div className={`w-full h-12 md:hidden flex justify-between items-center border-t border-black`}>
+            <div className={`w-full h-12 md:hidden flex justify-between items-center `}>
                 <Link href="/">
                     <img
-                        className="w-20 object-contain cursor-pointer"
+                        className="w-44 object-contain cursor-pointer"
                         src={
                             theme === "dark"
                                 ? "https://i.ibb.co/q7dJgb7/yellow-logo-removebg-preview.png"
@@ -32,7 +32,7 @@ function Header() {
                 </Link>
                 <MenuIcon
                     onClick={navbarToggle}
-                    className="md:hidden text-green-500 h-6 cursor-pointer text-white transition duration-300 pr-5"
+                    className="md:hidden text-green-500 h-6 cursor-pointertransition duration-300 pr-5"
                 />
             </div>
             <div
