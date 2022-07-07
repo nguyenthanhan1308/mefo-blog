@@ -55,7 +55,7 @@ export default function Home({ posts }: Props) {
                         </map>
                         <a target="_blank" href="https://www.facebook.com/ByoutiEmon">
                             <img
-                                className="absolute lg:top-0 right-0 md:bottom--10 lg:scale-100 md:scale-75"
+                                className="absolute lg:top-0 right-0 md:scale-75"
                                 src="https://i.ibb.co/tHcGfjS/kemonlogo-removebg-preview.png"
                                 alt="credit-removebg-preview"
                             />

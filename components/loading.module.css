@@ -2,7 +2,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 48px auto;
+    margin: 12rem auto;
 }
 .catbody {
     position: absolute;
@@ -170,7 +170,6 @@
     -webkit-animation: eye-light-animation 2.5s 1s infinite;
     animation: eye-light-animation 2.5s 1s infinite;
 }
-
 .head .eyelight:before {
     background-color: white;
     box-shadow: 0 0 10px white;
@@ -178,6 +177,7 @@
     -webkit-animation: eye-light-animation 2.5s 1s infinite;
     animation: eye-light-animation 2.5s 1s infinite;
 }
+
 .head .mouth {
     position: absolute;
     bottom: 5px;
@@ -191,7 +191,6 @@
     -webkit-animation: mouth-animation 2.5s 1s infinite;
     animation: mouth-animation 2.5s 1s infinite;
 }
-
 .head .mouth:before {
     content: "";
     position: absolute;
@@ -204,7 +203,6 @@
     border-top: 0;
     border-radius: 0 0 10px 10px;
 }
-
 .head .mouth:after {
     content: "";
     position: absolute;
@@ -225,7 +223,6 @@
     height: 3px;
     background-color: #514E51;
 }
-
 .head .beard:before {
     content: "";
     position: absolute;
@@ -236,7 +233,6 @@
     background-color: #514E51;
     transform: rotate(-10deg);
 }
-
 .head .beard:after {
     content: "";
     position: absolute;
@@ -250,14 +246,13 @@
 .head .beard.right {
     right: 72px;
 }
-
 .head .beard.right:before {
     transform: rotate(10deg);
 }
-
 .head .beard.right:after {
     transform: rotate(-10deg);
 }
+
 .foot {
     position: absolute;
     left: 0;
@@ -267,7 +262,6 @@
     background-color: #fff;
     transform-origin: right top;
 }
-
 .foot .belly {
     position: absolute;
     bottom: 0;
