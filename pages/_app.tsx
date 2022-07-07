@@ -21,8 +21,14 @@ const MyApp = ({ Component, pageProps }: AppProps, ) => {
                 <title>Journey to the end of life</title>
                 <link rel="icon" href="/coin.ico" />
             </Head>
-            <Header />
-            {loading ? <LoadingCat /> : <Component {...pageProps}/>}
+
+            {loading ? (
+                <LoadingCat />
+            ) : (
+                <>
+                    <Header /> <Component {...pageProps} />
+                </>
+            )}
         </ThemeProvider>
     );
 };

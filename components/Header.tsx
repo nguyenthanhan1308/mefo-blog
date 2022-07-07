@@ -1,19 +1,26 @@
+import { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-
+import {
+ MenuIcon
+} from "@heroicons/react/outline";
 function Header() {
+    const [showNavbar, setShowNavbar] = useState(false)
     const router = useRouter();
     const { theme, setTheme } = useTheme();
     const setCurrentTheme = () =>{
         setTheme(theme === "dark" ? "light" : "dark");
     }
+    const navbarToggle = () => {
+        setShowNavbar(!showNavbar);
+    }
     return (
-        <header className={`flex justify-center md:justify-between p-5 max-w-7xl mx-auto`}>
+        <header className={`flex justify-center md:justify-between p-5 max-w-7xl mx-auto relative `}>
             <div className="flex item-center space-x-5">
                 <Link href="/">
                     <img
-                        className="md:w-44 object-contain cursor-pointer"
+                        className="w-60 md:w-44 object-contain cursor-pointer"
                         src={
                             theme === "dark"
                                 ? "https://i.ibb.co/q7dJgb7/yellow-logo-removebg-preview.png"
@@ -22,10 +29,20 @@ function Header() {
                         alt=""
                     />
                 </Link>
-                <div className="hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase">
+                <div className={`${showNavbar && "w-60"} absolute md:static md:flex md:items-center `}>
+                    <MenuIcon
+                        onClick={navbarToggle}
+                        className="md:hidden absolute left-0 h-6 cursor-pointer hover:text-green-600 transition duration-300"
+                    />
+                </div>
+                <div
+                    className={`${
+                        showNavbar ? " " : "hidden"
+                    } md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase`}
+                >
                     <Link href="/about">
                         <h3
-                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                            className={`ml-10 max-w-[120px] hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
                                 router.asPath === "/about" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
                             }`}
                         >
@@ -34,7 +51,7 @@ function Header() {
                     </Link>
                     <Link href="/contact">
                         <h3
-                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                            className={`ml-10 max-w-[120px] hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
                                 router.asPath === "/contact" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
                             }`}
                         >
@@ -43,7 +60,7 @@ function Header() {
                     </Link>
                     <Link href="/projects">
                         <h3
-                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                            className={`ml-10 max-w-[120px] hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
                                 router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
                             }`}
                         >
