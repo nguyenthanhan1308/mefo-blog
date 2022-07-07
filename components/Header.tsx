@@ -61,11 +61,20 @@ function Header() {
                     </Link>
                     <Link href="/projects">
                         <div
-                            className={`border-b hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                            className={`hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
                                 router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
                             }`}
                         >
                             <h3 className={`pl-6`}>Projects &rarr;</h3>
+                        </div>
+                    </Link>
+                    <Link href="/donations">
+                        <div
+                            className={`border-b hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                                router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                            }`}
+                        >
+                            <h3 className={`pl-6`}>Donation &rarr;</h3>
                         </div>
                     </Link>
                 </div>

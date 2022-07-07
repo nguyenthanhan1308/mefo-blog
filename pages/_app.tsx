@@ -12,8 +12,9 @@ const MyApp = ({ Component, pageProps }: AppProps, ) => {
     useEffect(() =>{
         setLoading(true);
         setTimeout(() => {
+            console.log(window.innerWidth)
             setLoading(false);
-        }, 5000);
+        }, 4000);
     },[router.asPath])
     return (
         <ThemeProvider attribute="class">
