@@ -9,15 +9,70 @@ function Header() {
     const [showNavbar, setShowNavbar] = useState(false)
     const router = useRouter();
     const { theme, setTheme } = useTheme();
+
     const setCurrentTheme = () =>{
         setTheme(theme === "dark" ? "light" : "dark");
     }
     const navbarToggle = () => {
         setShowNavbar(!showNavbar);
     }
-    return (
-        <header className={`flex justify-center md:justify-between p-5 max-w-7xl mx-auto relative `}>
-            <div className="flex item-center space-x-5">
+    const renderMobileNavbar =()=>{
+        return (<>
+            <div className={`w-full h-12 md:hidden flex justify-between items-center border-t border-black`}>
+                <Link href="/">
+                    <img
+                        className="w-20 object-contain cursor-pointer"
+                        src={
+                            theme === "dark"
+                                ? "https://i.ibb.co/q7dJgb7/yellow-logo-removebg-preview.png"
+                                : `https://i.ibb.co/6bLGmkt/logo.png`
+                        }
+                        alt=""
+                    />
+                </Link>
+                <MenuIcon
+                    onClick={navbarToggle}
+                    className="md:hidden text-green-500 h-6 cursor-pointer text-white transition duration-300 pr-5"
+                />
+            </div>
+            <div
+                className={`${
+                    showNavbar ? "" : "hidden"
+                } w-full md:hidden  child:cursor-pointer child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase`}
+            >
+                <Link href="/about">
+                    <h3
+                        className={`ml-10  hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                            router.asPath === "/about" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                        }`}
+                    >
+                        About
+                    </h3>
+                </Link>
+                <Link href="/contact">
+                    <h3
+                        className={`ml-10  hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                            router.asPath === "/contact" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                        }`}
+                    >
+                        Contact
+                    </h3>
+                </Link>
+                <Link href="/projects">
+                    <h3
+                        className={`ml-10  hover:bg-green-500 dark:hover:bg-yellow-500 hover:text-white ${
+                            router.asPath === "/projects" ? "bg-green-600 dark:bg-yellow-600 text-white" : ""
+                        }`}
+                    >
+                        Projects
+                    </h3>
+                </Link>
+            </div>
+        </>)
+    }
+    const renderMD = () => {
+        return (
+            <div className="hidden md:flex item-center space-x-5">
                 <Link href="/">
                     <img
                         className="w-60 md:w-44 object-contain cursor-pointer"
@@ -29,16 +84,8 @@ function Header() {
                         alt=""
                     />
                 </Link>
-                <div className={`${showNavbar && "w-60"} absolute md:static md:flex md:items-center `}>
-                    <MenuIcon
-                        onClick={navbarToggle}
-                        className="md:hidden absolute left-0 h-6 cursor-pointer hover:text-green-600 transition duration-300"
-                    />
-                </div>
                 <div
-                    className={`${
-                        showNavbar ? " " : "hidden"
-                    } md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase`}
+                    className={`w-full hidden md:inline-flex items-center space-x-2 child:cursor-pointer child:flex child:items-center child:justify-center child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase`}
                 >
                     <Link href="/about">
                         <h3
@@ -69,6 +116,16 @@ function Header() {
                     </Link>
                 </div>
             </div>
+        );
+    }
+
+    return (
+        <header
+            className={`flex flex-col md:flex-row justify-center md:justify-between max-w-7xl mx-auto relative `}
+        >
+            {renderMobileNavbar()}
+            {renderMD()}
+            {/* dark mode toggle */}
             <div className="hidden md:flex items-center space-x-5 text-yellow-600 child:cursor-pointer">
                 <label className="inline-flex relative items-center mr-5 cursor-pointer">
                     <input
