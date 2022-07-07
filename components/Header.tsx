@@ -33,13 +33,13 @@ function Header() {
                     </Link>
                     <MenuIcon
                         onClick={navbarToggle}
-                        className="md:hidden text-green-500 h-6 cursor-pointertransition duration-300 pr-5"
+                        className="md:hidden hover:text-green-500 h-6 transition duration-3000 ease-in-out pr-5 cursor-pointer"
                     />
                 </div>
                 <div
                     className={`${
                         showNavbar ? "absolute opacity-100" : "hidden opacity-0"
-                    } md:hidden w-full transition ease-in-out duration-3000 bg-white top-20 z-10 child:cursor-pointer child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase child:border-t child:border-black`}
+                    } md:hidden w-full transition ease-in-out duration-3000 bg-white top-20 z-10 child:cursor-pointer child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase child:border-t `}
                 >
                     <Link href="/about">
                         <div

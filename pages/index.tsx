@@ -26,7 +26,7 @@ export default function Home({ posts }: Props) {
                     </div>
                     <div className="px-10 space-y-5">
                         <h1 className="max-w-xl font-serif text-2xl md:text-4xl lg:text-6xl ">
-                            <span className="underline decoration-white decoration-4 ">MEFO BLOG</span> <br /> is a place
+                            <span className="underline decoration-white decoration-4 text-5xl">MEFO BLOG</span> <br /> is a place
                             where I write about things I like.
                         </h1>
                         <h2 className="">I'm a Vietnamese developer who love to play games and explore new things.</h2>
