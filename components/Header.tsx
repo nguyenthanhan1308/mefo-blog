@@ -19,7 +19,7 @@ function Header() {
 
     useEffect(() => {
         setCurrentTheme();
-    }, [theme])
+    }, [])
 
     const renderMobileNavbar =()=>{
         return (
