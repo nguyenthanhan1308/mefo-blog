@@ -1,23 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import {
- MenuIcon
-} from "@heroicons/react/outline";
+import { MenuIcon } from "@heroicons/react/outline";
 function Header() {
-    const [showNavbar, setShowNavbar] = useState(false)
+    const [showNavbar, setShowNavbar] = useState(false);
     const router = useRouter();
     const { theme, setTheme } = useTheme();
 
     const setCurrentTheme = () => {
         setTheme(theme === "dark" ? "light" : "dark");
-    }
+    };
     const navbarToggle = () => {
         setShowNavbar(!showNavbar);
-    }
+    };
 
-    const renderMobileNavbar =()=>{
+    const renderMobileNavbar = () => {
         return (
             <>
                 <div className={`w-full h-20 md:hidden flex justify-between items-center relative`}>
@@ -34,7 +32,7 @@ function Header() {
                     </Link>
                     <MenuIcon
                         onClick={navbarToggle}
-                        className="md:hidden hover:text-green-500 h-6 transition duration-3000 ease-in-out pr-5 cursor-pointer"
+                        className="md:hidden hover:text-green-500 dark:hover:text-yellow-500 h-6 transition duration-3000 ease-in-out pr-5 cursor-pointer"
                     />
                 </div>
                 <div
@@ -81,7 +79,7 @@ function Header() {
                 </div>
             </>
         );
-    }
+    };
     const renderMD = () => {
         return (
             <div className="hidden md:flex item-center space-x-5">
@@ -129,12 +127,10 @@ function Header() {
                 </div>
             </div>
         );
-    }
+    };
 
     return (
-        <header
-            className={`flex flex-col md:flex-row justify-center md:justify-between max-w-7xl mx-auto relative `}
-        >
+        <header className={`flex flex-col md:flex-row justify-center md:justify-between max-w-7xl mx-auto relative `}>
             {renderMobileNavbar()}
             {renderMD()}
             {/* dark mode toggle */}
