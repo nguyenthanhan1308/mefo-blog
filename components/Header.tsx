@@ -10,16 +10,12 @@ function Header() {
     const router = useRouter();
     const { theme, setTheme } = useTheme();
 
-    const setCurrentTheme = () =>{
+    const setCurrentTheme = () => {
         setTheme(theme === "dark" ? "light" : "dark");
     }
     const navbarToggle = () => {
         setShowNavbar(!showNavbar);
     }
-
-    useEffect(() => {
-        setCurrentTheme();
-    }, [])
 
     const renderMobileNavbar =()=>{
         return (
