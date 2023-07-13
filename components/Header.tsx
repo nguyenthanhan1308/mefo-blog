@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
@@ -16,6 +16,11 @@ function Header() {
     const navbarToggle = () => {
         setShowNavbar(!showNavbar);
     }
+
+    useEffect(() => {
+        setCurrentTheme();
+    }, [theme])
+
     const renderMobileNavbar =()=>{
         return (
             <>
@@ -39,7 +44,7 @@ function Header() {
                 <div
                     className={`${
                         showNavbar ? "absolute opacity-100" : "hidden opacity-0"
-                    } md:hidden w-full transition ease-in-out duration-3000 bg-white top-20 z-10 child:cursor-pointer child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase child:border-t `}
+                    } dark:bg-yellow-600 text-white md:hidden w-full transition ease-in-out duration-3000 bg-white top-20 z-10 child:cursor-pointer child:p-4 child:transition child:duration-500 child:ease-in-out child:uppercase child:border-t `}
                 >
                     <Link href="/about">
                         <div
