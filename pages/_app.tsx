@@ -12,14 +12,13 @@ const MyApp = ({ Component, pageProps }: AppProps, ) => {
     useEffect(() =>{
         setLoading(true);
         setTimeout(() => {
-            console.log(window.innerWidth)
             setLoading(false);
-        }, 4000);
+        }, 2800);
     },[router.asPath])
     return (
         <ThemeProvider attribute="class">
             <Head>
-                <title>Journey to the end of life</title>
+                <title>Journey to the horizon of life</title>
                 <link rel="icon" href="/coin.ico" />
             </Head>
 

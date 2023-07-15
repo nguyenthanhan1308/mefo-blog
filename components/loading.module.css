@@ -3,6 +3,7 @@
     width: 300px;
     height: 300px;
     margin: 12rem auto;
+    resize: 0.5;
 }
 .catbody {
     position: absolute;
@@ -548,4 +549,10 @@
     100% {
         height: 0px;
     }
-} 
+}
+
+@media (max-width: 767px) {
+    .cat{
+        transform: scale(0.5);
+    }
+}

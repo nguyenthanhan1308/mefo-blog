@@ -45,7 +45,7 @@ export default function Home({ posts }: Props) {
                             <Link href="/donations">
                                 <area
                                     target=""
-                                    alt=""
+                                    alt="donations"
                                     title=""
                                     href=""
                                     coords="24,360,58,430,198,430,163,353,103,273,59,244,32,239,11,253,6,292"
@@ -53,7 +53,7 @@ export default function Home({ posts }: Props) {
                                 />
                             </Link>
                         </map>
-                        <a target="_blank" href="https://www.facebook.com/ByoutiEmon">
+                        <a rel="noopener" target="_blank" href="https://www.facebook.com/ByoutiEmon">
                             <img
                                 className="absolute lg:top-0 right-0 md:scale-75"
                                 src="https://i.ibb.co/tHcGfjS/kemonlogo-removebg-preview.png"
